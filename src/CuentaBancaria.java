@@ -32,7 +32,7 @@ public class CuentaBancaria
     {
         if(valorARetirar <= 0)
         {
-            
+            throw new IllegalArgumentException ( "El valor no es valido");
         }
         if(valorARetirar > saldo)
         {
