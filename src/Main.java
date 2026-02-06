@@ -6,5 +6,12 @@ public class Main {
         cuenta1.retirar( valorARetirar: 100);
         cuenta1.consignar(valorAConsignar: 150);
         System.out.printf("El saldo de la cuenta es: " + cuenta1.getSaldo() );
+
+        Notificacion[] notificaciones = new Notificacion[2];
+        notificaciones[0] = new NotificacionCorreo(receptrorNotifiacion: "Pepito");
+        notificaciones[1] = new NotificacionSMS(receptrorNotifiacion: "Juanito");
+
+        notificaciones[0].enviarMensaje("Hola mi amigo");
+        notificaciones[1].enviarMensaje("Hola mi broco");
     }
 }
