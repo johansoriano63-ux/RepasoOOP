@@ -1,6 +1,6 @@
 public class CuentaBancaria
 {
-    private final String id;
+    private final String  id;
     private int saldo;
 
     public CuentaBancaria ( String id, int saldoInicial)
